@@ -13,10 +13,20 @@ public class Main {
             fuelPrice = fuel92price;
         }
 
-        if(fuelType == 95) {
-            fuelPrice = 95;
+        else if(fuelType == 95) {
+            fuelPrice = fuel95price;
+        } else {
+            System.out.println("Указан неверный тип топлива");
+        }
+
+        if (amount < 1) {
+            System.out.println("Указано слишком малое количество топлива");
+            amount = 0;
         }
 
         System.out.println("Цена выбранного топлива: " + fuelPrice + "руб.");
+
+        double totalPrice = fuelPrice * amount;
+        System.out.println("Общая стоимость заправки: " + totalPrice + "руб.");
     }
 }
