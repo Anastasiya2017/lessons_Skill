@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DateTime">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/1module/out/DateTime.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
